@@ -14,7 +14,7 @@ function quickMath(numb) {
 }
 
 //Anonymous Function
-array.map(function(x){
+var anon = array.map(function(x){
   return x + 6 * 8;
 })
   
@@ -26,4 +26,4 @@ var Key = array.map(quickMath);
 console.log("My Selected Numbers: ", array);
 console.log("6 will be multiplied by 4 then add 1. ", quickMath(6));
 console.log("I want to PEMDAS on the selected numbers: ", Key);
-console.log("Be anonymous with the array:", anon);
+console.log(" Lets be anonymous with the array:", anon);
