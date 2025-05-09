@@ -3,7 +3,7 @@
 // Date: May 7th 2025
 
 // Array
-let array = [4,18,250,500,1000]
+ array = [4,18,250,500,1000]
 
 // Functions
 quickMath(6)
