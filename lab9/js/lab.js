@@ -16,7 +16,7 @@ $("#button-problems").click(function(){
 
 // Results Section Button
 $("#results").apend("<'button id= button-results'>Big Box Button</button>");
-$("#results").click(function(){
+$("#results-problem").click(function(){
   $("#results").toggleClass("special");
 })
 
