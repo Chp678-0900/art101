@@ -15,7 +15,7 @@ $("#button-problems").click(function(){
 });
 
 // Results Section Button
-$("#results").append("<button id= 'button-results'>change the style of the results section</button>");
+$("#results").append("<button id= 'button-results'>change the style of the results section.</button>");
 $("#results-problem").click(function(){
   $("#results").toggleClass("special");
 })
