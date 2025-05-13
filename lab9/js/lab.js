@@ -3,19 +3,19 @@
 // Date: 5-12-2025
 
 // Challenge Section Button
-$("#challenge").append("<'button id= button-challenge'>change the style of the challenge section</button>");
+$("#challenge").append("<button id= 'button-challenge'>change the style of the challenge section.</button>");
 $("#button-challenge").click(function(){
   $("#challenge").toggleClass("special");
 });
 
 // Problem Section Button
-$("#problems").append("<'button id= button-problems'>change the style of the problem section</button>");
+$("#problems").append("<button id= 'button-problems'>change the style of the problem section.</button>");
 $("#button-problems").click(function(){
   $("#problems").toggleClass("special");
 });
 
 // Results Section Button
-$("#results").append("<'button id= button-results'>change the style of the results section</button>");
+$("#results").append("<button id= 'button-results'>change the style of the results section</button>");
 $("#results-problem").click(function(){
   $("#results").toggleClass("special");
 })
