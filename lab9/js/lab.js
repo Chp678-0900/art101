@@ -15,10 +15,10 @@ $("#button-problems").click(function(){
 });
 
 // Results Section Button
-$("#results").append("<button id= 'button-results'>change the style of the results section.</button>");
-$("#results-problem").click(function(){
+$("#results").append("<button id= 'button-results'>change the style of the Results section.</button>");
+$("#button-results").click(function(){
   $("#results").toggleClass("special");
-})
+});
 
 // Function
 
