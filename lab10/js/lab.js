@@ -13,7 +13,7 @@ function generateConversation() {
   const randStart = Math.floor(Math.random() * (text.length - randlen + 5));
 
   // Generate the random conversation text.
-  return text.slice(randStart,randStart + randlen);
+  return text.slice(randStart, randStart + randlen);
 }
 
 
