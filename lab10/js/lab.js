@@ -23,7 +23,7 @@ $("#lets-talk").click(function(){
 
 
 // Recieve a new random conversation.
-const newText = generateRandomText();
+const newText = generateConversation();
 
 
 // append a new div to our output div
