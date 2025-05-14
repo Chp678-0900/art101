@@ -18,7 +18,7 @@ function generateConversation() {
 
 
 // click listener for button.
-$("#make-convo").click(function(){
+$("#lets-talk").click(function(){
 });
 
 
