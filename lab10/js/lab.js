@@ -19,15 +19,13 @@ function generateConversation() {
 
 // click listener for button.
 $("#lets-talk").click(function(){
+  const newText = generateConversation();
+  $("#output").append('<div class="text"><p>' + newText + '</p></div>');
 });
 
 
-// Recieve a new random conversation.
-const newText = generateConversation();
 
 
-// append a new div to our output div
-$("#output").append('<div class="text"><p>' + newText + '</p></div>');
 
 
 
