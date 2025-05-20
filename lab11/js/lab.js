@@ -7,7 +7,7 @@
 
 // Sort the characters in a string with aplhabetical order.
 function sortString(inputString) {
-  return inputString.spilt('').sort().join('');
+  return inputString.split('').sort().join('');
 }
 
 
