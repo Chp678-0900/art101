@@ -15,17 +15,17 @@ function assignHouse(str){
   const len = str.length;
   const mod = len % 4;
 
-  if(mod===0) {
-    return "Ravenclaw";
+  if(mod==0) {
+    return "Raven claw";
 
-  } else if (mod === 1) {
+  } else if (mod == 1) {
     return "Grfyndoor";
 
-  } else if (mod === 2) {
+  } else if (mod == 2) {
     return "Slythern";
 
-  } else if (mod === 3) {
-    return "Hufflepuff";
+  } else if (mod == 3) {
+    return "Huffle puff";
   }
 
 }
@@ -33,17 +33,17 @@ function assignHouse(str){
 
 
 // Button Listener
-$("findie").click(function(){
-  let name = $("placement").val()
+$("#findie").click(function(){
+  let name = $("#placement").val()
   console.log(name);
 
   let nameLength = name.length;
   console.log(nameLength);
 
-  let House = assignHouse(nameLength);
+  let House = assignHouse(name);
   console.log(House);
 
-  $("#output").html("<h1>" + "You're part of" + House + "</h1>")
+  $("#output").html("<h1>" + "You're part of" + House +"!" +"</h1>");
 
 });
 
