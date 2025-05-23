@@ -43,7 +43,7 @@ $("findie").click(function(){
   let House = assignHouse(nameLength);
   console.log(House);
 
-  $("output").html("<h1>" + "You're part of" + House + "</h1>")
+  $("#output").html("<h1>" + "You're part of" + House + "</h1>")
 
 });
 
