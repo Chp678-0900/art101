@@ -6,7 +6,7 @@
 function bagTrailMix() {
   let output = "";
 
-for(let mix = 1; mix <= 230; mix++){
+for(let mix = 1; mix <= 200; mix++){
   let result = ""; 
 
   if(mix % 4 === 0 && mix % 6 === 0) {
