@@ -9,11 +9,11 @@ function bagTrailMix() {
 for(let mix = 1; mix <= 200; mix++){
   let result = ""; 
 
-  if(mix % 4 === 0 && mix % 6 === 0) {
+  if(mix % 3 === 0 && mix % 5 === 0) {
     result = "Grains";
   }
 
-  else if(mix % 6 ===0){
+  else if(mix % 5 ===0){
     result = "Raisins";
   }
 
@@ -21,7 +21,7 @@ for(let mix = 1; mix <= 200; mix++){
     result = "Granola";
   }
 
-  else if(mix % 4 ===0){
+  else if(mix % 3 ===0){
     result = "M&M";
   }
 
