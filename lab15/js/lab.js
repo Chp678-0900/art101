@@ -45,7 +45,7 @@ main();
 
 // Button click response
 $("#submit").click(function(){
-  console.log("Clicked");
+  console.log("Yes or no");
 
 
 // Using the core $.ajax().method
