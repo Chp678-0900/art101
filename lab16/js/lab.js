@@ -2,43 +2,6 @@
 // Author: Cesar Hernandez
 // Date: 06-04-2025
 
-// Constants
-
-// Functions
-
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
-}
-
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
-
-// let's get this party started
-main();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // Using the core $.ajax() method
 $.ajax({
@@ -50,20 +13,29 @@ $.ajax({
           //   goes (check the api docs)
           id: 614,
           api_key: "woodpecker",
+          type: "GET",
+          dataType : "json",
         },
-  // Whether this is a POST or GET request
-  type: "GET",
-  // The type of data we expect back
-  dataType : "json",
   // What do we do when the api call is successful
   //   all the action goes in here
   success: function(data) {
-      // do stuff
       console.log(data);
+
+    // Pulling out the Data:
+    let title = data.title;
+    let date = data.num;
+    let desc = data.transcript;
+    let imageUrl = data.img;
+
+  // Data in output:
+    $("#output").html(`<h2>${title}<h2>`);
+    $("#output").append(`<img src = '${imageUrl}'/>`);
+    $("#output").append(`<p class = 'date'>Comic: ${date}</p>`);
+    $("#output").append(`<p class = 'desc'> ${desc}</p>`);
   },
+  
   // What we do if the api call fails
   error: function (jqXHR, textStatus, errorThrown) { 
-      // do stuff
       console.log("Error:", textStatus, errorThrown);
   }
 })
